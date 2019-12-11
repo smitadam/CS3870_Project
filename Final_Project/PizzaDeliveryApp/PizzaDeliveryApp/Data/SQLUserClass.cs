@@ -69,11 +69,11 @@ namespace PizzaDeliveryApp.Data
             }
         }
 
-        public static void InsertUser(string theID, string newName, double newEmail, string newPassword, string newRole)
+        public static void InsertUser(string theID, string newName, string newEmail, string newPassword, string newRole, double newPhone, string newAddress)
         {
-            userCmd.CommandText = "INSERT INTO UserInfo(userID, Name, Email, Password, Role) values('" + theID + "', '" +
+            userCmd.CommandText = "INSERT INTO UserInfo(userID, Name, Email, Password, Role, Phone, Address) values('" + theID + "', '" +
                                   newName + "', '" +
-                                  newEmail + "', '" + newPassword + "', '" + newRole + "')";
+                                  newEmail + "', '" + newPassword + "', '" + newRole + "', '" + newPhone + "', '" + newAddress +  "')";
 
 
             try

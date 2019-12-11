@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" type="text/css" href="J:\Web Protocols\Final_Project\PizzaDeliveryApp\PizzaDeliveryApp\Style.css"/>
-    <title>CS3870 - Fall 2019 - Program 6 - Create User</title>
+    <link rel="stylesheet" type="text/css" href="/Style.css"/>
+    <title>Pie Peddlers - User Registration</title>
     <style type="text/css">
         table{
             border: none;
@@ -21,7 +21,7 @@
 <body>
     <form id="CreateUserForm" runat="server">
         <h1>Pie Peddlers</h1>
-        <h2>Registration</h2>
+        <h2>User Registration</h2>
             <table class="auto-style1" align="center" style:="" width="60%">
             <tr>
                 <td class="auto-style2">
@@ -87,6 +87,28 @@
                 <td>
                     <asp:RequiredFieldValidator ID="ConfirmPassFieldValidator" runat="server" ControlToValidate="confirmPasswordBox" ErrorMessage="Confirm Password is Required!" Font-Size="Smaller" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passwordBox" ControlToValidate="confirmPasswordBox" ErrorMessage="Confirm Password must match the one entered above!" Font-Bold="True" Font-Italic="True" Font-Size="Smaller" ForeColor="Red"></asp:CompareValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="lblPhone" runat="server" Font-Bold="True" Text="Phone:"></asp:Label>
+                </td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Phone number is required!" Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="Red">Phone number is required!</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="lblAddress" runat="server" Font-Bold="True" Text="Address:"></asp:Label>
+                </td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorAddress" runat="server" ControlToValidate="txtAddress" ErrorMessage="Address is required!" Font-Bold="True" Font-Italic="True" Font-Size="Small" Font-Underline="False" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
