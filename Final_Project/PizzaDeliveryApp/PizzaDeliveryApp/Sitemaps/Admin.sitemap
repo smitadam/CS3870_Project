@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="" title=""  description="">
-    <siteMapNode url="" title=""  description="" />
-    <siteMapNode url="" title=""  description="" />
+  <siteMapNode url="" title="Pie Peddlers"  description="">
+    <siteMapNode url="" title="MyPizza"  description="">
+      <siteMapNode  url="MyPizza\Login.aspx" title="Login"  description="Login to your user account."/>
+      <siteMapNode  url="MyPizza\CreateUser.aspx" title="Register"  description="Register a new account."/>
+    </siteMapNode>
+    <siteMapNode url="Admin\Default.aspx" title="Admin Access"  description="Employee use only.">
+      <siteMapNode  url="Admin\UserManagement.aspx" title="User Management"  description="Edit user information."/>
+      <siteMapNode  url="Admin\SpecialtyPizzaManagement.aspx" title="Specialty Pizza Management"  description="Edit specialty pizza information."/>
+      <siteMapNode  url="Admin\ToppingManagement.aspx" title="Topping Management"  description="Edit topping information."/>
+    </siteMapNode>
   </siteMapNode>
 </siteMap>
