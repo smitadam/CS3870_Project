@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/Style.css" type="text/css" media="screen" />
     <style type="text/css">
         table{
             border: none;

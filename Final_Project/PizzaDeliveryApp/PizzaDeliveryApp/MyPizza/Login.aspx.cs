@@ -43,7 +43,10 @@ namespace PizzaDeliveryApp.MyPizza
                     {
                         Application["CurrentUser"] = userNameInput;
                         Response.Write("Login Successful!");
-                        Response.Redirect("/Default.aspx");
+                        if (tblUserData.Rows[i][4].ToString().Trim() == "Admin")
+                            Response.Redirect(@"/Admin\Default.aspx");
+                        else
+                            Response.Redirect(@"/User\Default.aspx");
                     }
                 }
 
