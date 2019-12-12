@@ -11,21 +11,25 @@ namespace PizzaDeliveryApp.User
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Data.SQLShoppingCartClass.getShoppingCartData();
             if (Application["CurrentUser"].ToString() == "")
             {
                 Response.Redirect(@"/MyPizza\Login.aspx");
             }
             else
             {
-                lblLoginName.Text = Application["CurrentUser"].ToString();
+                lblLoginName.Text = "Delivery for: " + Application["CurrentUser"].ToString();
                 btnLoginStatus.Text = "Logout";
+                txtTotal.Text = string.Format("{0:C}", Double.Parse(Application["CartTotal"].ToString()));
             }
         }
 
         protected void btnLoginStatus_Click(object sender, EventArgs e)
         {
+            Data.SQLShoppingCartClass.DeleteShoppingCart();
             Response.Redirect(@"/MyPizza\Login.aspx");
             Application["CurrentUser"] = "";
+            Application["CartTotal"] = "0.00";
         }
     }
 }

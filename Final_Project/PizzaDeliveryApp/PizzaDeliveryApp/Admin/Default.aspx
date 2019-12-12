@@ -39,6 +39,7 @@
                 </Nodes>
             </asp:TreeView>
             <asp:SiteMapDataSource ID="SiteMapDataSourceAdmin" runat="server" SiteMapProvider="SiteMapDataSourceAdmin"/>
+            <asp:Image ID="Image1" runat="server" Height="529px" ImageUrl="~/Images/PiePeddlersLogo.jpg" Width="569px" />
     </form>
 </body>
 </html>

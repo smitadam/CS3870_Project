@@ -6,6 +6,18 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
+.btn {
+    border: 3px;
+    border-style: outset;
+    padding: 5px;
+    color: black;
+    border-color: grey;
+    background-color: ButtonFace;
+    font-family: Helvetica;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 14px;
+}
 table{
     border: none;
 }
@@ -39,12 +51,7 @@ h3 {
     margin-right: 200px;
 }
 
-        .auto-style1 {
-            margin-left: 421px;
-            margin-top: 0px;
-        }
-
-.TreeView {
+        .TreeView {
     position: absolute;
     left: 39px;
     top: 172px;
@@ -62,20 +69,20 @@ a {
             left: 43px;
             top: 172px;
         }
+        .auto-style4 {
+            height: 23px;
+        }
     </style>
 </head>
 <body>
-    <form id="CheckoutForm" runat="server">
-        <div>
+
+        <form id="CheckoutForm" runat="server">
             <h1>Pie Peddlers</h1>
             <h2>Checkout</h2>
             <h3>
                 <asp:Label ID="lblLoginName" class="LoginName" runat="server" Text="LoginName"></asp:Label>
-                <asp:Button class="LoginStatus" ID="btnLoginStatus" runat="server" BackColor="White" BorderStyle="None" Font-Underline="True" ForeColor="Blue" Text="LoginStatus" OnClick="btnLoginStatus_Click" UseSubmitBehavior="False" Visible="False" />
+                <asp:Button class="LoginStatus" ID="btnLoginStatus" runat="server" BackColor="White" BorderStyle="None" Font-Underline="True" ForeColor="Blue" Text="LoginStatus" OnClick="btnLoginStatus_Click" UseSubmitBehavior="False" />
             </h3>
-        </div>
-    </form>
-        <form id="DefaultForm" runat="server">
             <asp:SiteMapDataSource ID="SiteMapDataSourceUser" runat="server" SiteMapProvider="SiteMapDataSourceUser" />
             <asp:TreeView class="TreeView" ID="TreeView1" runat="server" ExpandImageToolTip="" DataSourceID="SiteMapDataSourceUser" CssClass="auto-style3">
                 <DataBindings>
@@ -91,10 +98,46 @@ a {
                     <asp:TreeNode NavigateUrl="Member\Checkout.aspx" Text="Checkout" Value="New Node"></asp:TreeNode>
                 </Nodes>
             </asp:TreeView>
-            <asp:GridView ID="GridView1" runat="server" CssClass="auto-style1" Width="238px">
+                    <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataSourceID="SqlDataSourceShopping" Height="204px" Width="576px" align="center" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:BoundField DataField="ProductName" HeaderText="Pizza" SortExpression="ProductName" />
+                            <asp:BoundField DataField="ProductSize" HeaderText="Size" SortExpression="ProductSize" />
+                            <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+                            <asp:BoundField DataField="Price" DataFormatString="{0:C}" HeaderText="Price" SortExpression="Price" />
+                        </Columns>
+                        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+                        <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#FFF1D4" />
+                        <SortedAscendingHeaderStyle BackColor="#B95C30" />
+                        <SortedDescendingCellStyle BackColor="#F1E5CE" />
+                        <SortedDescendingHeaderStyle BackColor="#93451F" />
             </asp:GridView>
-    </form>
-    <form id="form1" runat="server">
+            <asp:SqlDataSource ID="SqlDataSourceShopping" runat="server" ConnectionString="<%$ ConnectionStrings:UserInfoConnectionString %>" SelectCommand="SELECT * FROM [ShoppingCart]"></asp:SqlDataSource>
+        <br />
+             <table class="auto-style1" align="center">
+             <tr>
+                 <td class="auto-style4">
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <asp:Label ID="lblTotal" runat="server" Font-Bold="True" Text="Total: " align="center"></asp:Label>
+                     <asp:TextBox ID="txtTotal" runat="server" align="center"></asp:TextBox>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <asp:Button  ID="btnPayment" CssClass="btn" runat="server" Text="Proceed to payment" Width="192px" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+         </table>
     </form>
 </body>
 </html>

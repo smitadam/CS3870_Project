@@ -17,7 +17,7 @@ namespace PizzaDeliveryApp
             }
             else
             {
-                lblLoginName.Text = Application["CurrentUser"].ToString();
+                lblLoginName.Text = "Logged in as: " + Application["CurrentUser"].ToString();
                 btnLoginStatus.Text = "Logout";
             }
         }
@@ -30,7 +30,7 @@ namespace PizzaDeliveryApp
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CheckoutPage.aspx");
+            Response.Redirect("CreateOrder.aspx");
         }
     }
 }

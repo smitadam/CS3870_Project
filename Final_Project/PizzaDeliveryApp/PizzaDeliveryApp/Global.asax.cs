@@ -22,6 +22,26 @@ namespace PizzaDeliveryApp
             //User Initialization
             Application["CurrentUser"] = "";
 
+            //Checkout Initialization
+            Application["ProductName"] = "";
+            Application["ProductPrice"] = "";
+            Application["ProductSize"] = "";
+            Application["ProductDescription"] = "";
+            Application["Computed"] = false;
+
+            Application["CartTotal"] = Double.Parse("0.00");
+
+        }
+
+        void Application_End(object sender, EventArgs e)
+        {
+            Data.SQLShoppingCartClass.getShoppingCartData();
+            Data.SQLShoppingCartClass.DeleteShoppingCart();
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            Data.SQLShoppingCartClass.getShoppingCartData();
+            Data.SQLShoppingCartClass.DeleteShoppingCart();
         }
     }
 }

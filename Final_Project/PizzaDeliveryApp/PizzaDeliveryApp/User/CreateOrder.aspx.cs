@@ -17,7 +17,7 @@ namespace PizzaDeliveryApp.User
             }
             else
             {
-                lblLoginName.Text = Application["CurrentUser"].ToString();
+                lblLoginName.Text = "Delivery for: " + Application["CurrentUser"].ToString();
                 btnLoginStatus.Text = "Logout";
             }
         }

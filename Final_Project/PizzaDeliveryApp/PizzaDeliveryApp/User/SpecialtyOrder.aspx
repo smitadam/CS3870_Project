@@ -8,7 +8,18 @@
     <title></title>
     <style type="text/css">
 
-
+.btn {
+    border: 3px;
+    border-style: outset;
+    padding: 5px;
+    color: black;
+    border-color: grey;
+    background-color: ButtonFace;
+    font-family: Helvetica;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 h1 {
     font-family: "Times New Roman",Georgia,serif;
@@ -141,7 +152,7 @@ a {
              <tr>
                  <td>
                      <asp:Label ID="lblSize" runat="server" Font-Bold="True" Text="Select Size: "></asp:Label>
-                     <asp:DropDownList ID="DropDownList1" runat="server" Height="17px" Width="135px">
+                     <asp:DropDownList ID="ddSize" runat="server" Height="17px" Width="135px">
                          <asp:ListItem>Small</asp:ListItem>
                          <asp:ListItem>Medium</asp:ListItem>
                          <asp:ListItem>Large</asp:ListItem>

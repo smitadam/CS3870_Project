@@ -39,7 +39,10 @@
                     <asp:TreeNode NavigateUrl="Member\Checkout.aspx" Text="Checkout" Value="New Node"></asp:TreeNode>
                 </Nodes>
             </asp:TreeView>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Create Order" Width="121px" />
+             <asp:Image ID="Image1" runat="server" Height="529px" ImageUrl="~/Images/PiePeddlersLogo.jpg" Width="569px" />
+            <p>
+            <asp:Button ID="btnStartOrder" CssClass="btn" runat="server" OnClick="Button1_Click" Text="Start Order" Width="144px" />
+             </p>
     </form>
 </body>
 </html>

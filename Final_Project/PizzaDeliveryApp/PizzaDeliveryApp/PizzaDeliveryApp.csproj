@@ -129,12 +129,12 @@
   <ItemGroup>
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\SpecialtyPizzaManagement.aspx" />
-    <Content Include="Admin\ToppingManagement.aspx" />
     <Content Include="Admin\UserManagement.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\PiePeddlersLogo.jpg" />
     <Content Include="User\Checkout.aspx" />
     <Content Include="User\CreateOrder.aspx" />
     <Content Include="User\Default.aspx" />
@@ -203,13 +203,6 @@
     <Compile Include="Admin\SpecialtyPizzaManagement.aspx.designer.cs">
       <DependentUpon>SpecialtyPizzaManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ToppingManagement.aspx.cs">
-      <DependentUpon>ToppingManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\ToppingManagement.aspx.designer.cs">
-      <DependentUpon>ToppingManagement.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\UserManagement.aspx.cs">
       <DependentUpon>UserManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,6 +219,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Data\SQLShoppingCartClass.cs" />
     <Compile Include="Data\SQLUserClass.cs" />
     <Compile Include="User\Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
