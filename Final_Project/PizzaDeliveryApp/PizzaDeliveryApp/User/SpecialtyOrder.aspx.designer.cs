@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PizzaDeliveryApp.Admin {
+namespace PizzaDeliveryApp.User {
     
     
-    public partial class UserManagement {
+    public partial class SpecialtyOrder {
         
         /// <summary>
-        /// UserManagementForm control.
+        /// SpecialtyOrderForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm UserManagementForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm SpecialtyOrderForm;
         
         /// <summary>
         /// lblLoginName control.
@@ -40,6 +40,15 @@ namespace PizzaDeliveryApp.Admin {
         protected global::System.Web.UI.WebControls.Button btnLoginStatus;
         
         /// <summary>
+        /// SqlDataSourceSpecialtyPizzas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceSpecialtyPizzas;
+        
+        /// <summary>
         /// TreeView1 control.
         /// </summary>
         /// <remarks>
@@ -49,39 +58,66 @@ namespace PizzaDeliveryApp.Admin {
         protected global::System.Web.UI.WebControls.TreeView TreeView1;
         
         /// <summary>
-        /// SiteMapDataSourceAdmin control.
+        /// SiteMapDataSourceUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSourceAdmin;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSourceUser;
         
         /// <summary>
-        /// DetailsView1 control.
+        /// DetailsViewSpecialtyPizza control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsViewSpecialtyPizza;
         
         /// <summary>
-        /// SqlDataSourceUserInfo control.
+        /// lblPricing control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceUserInfo;
+        protected global::System.Web.UI.WebControls.Label lblPricing;
         
         /// <summary>
-        /// txtMessage control.
+        /// lblSize control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMessage;
+        protected global::System.Web.UI.WebControls.Label lblSize;
+        
+        /// <summary>
+        /// DropDownList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// btnCheckout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCheckout;
     }
 }

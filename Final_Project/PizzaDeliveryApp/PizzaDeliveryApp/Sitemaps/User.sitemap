@@ -7,5 +7,7 @@
     </siteMapNode>
     <siteMapNode url="User\Default.aspx" title="Home"  description="Main page" />
     <siteMapNode url="User\CreateOrder.aspx" title="Order Online"  description="Create an order for delivery or carry out." />
+    <siteMapNode url="User\SpecialtyOrder.aspx" title="Specialty Pizzas"  description="Create an order for delivery or carry out." />
+    <siteMapNode url="User\Checkout.aspx" title="Checkout"  description="Complete your order." />
   </siteMapNode>
 </siteMap>

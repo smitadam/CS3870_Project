@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PizzaDeliveryApp.Admin
+namespace PizzaDeliveryApp.User
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class SpecialtyOrder : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +17,7 @@ namespace PizzaDeliveryApp.Admin
             }
             else
             {
-                lblLoginName.Text = "Logged in as: " + Application["CurrentUser"].ToString();
+                lblLoginName.Text = Application["CurrentUser"].ToString();
                 btnLoginStatus.Text = "Logout";
             }
         }
@@ -26,6 +26,16 @@ namespace PizzaDeliveryApp.Admin
         {
             Response.Redirect(@"/MyPizza\Login.aspx");
             Application["CurrentUser"] = "";
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCheckout_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

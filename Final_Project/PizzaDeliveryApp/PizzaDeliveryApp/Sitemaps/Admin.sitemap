@@ -8,7 +8,6 @@
     <siteMapNode url="Admin\Default.aspx" title="Admin Access"  description="Employee use only.">
       <siteMapNode  url="Admin\UserManagement.aspx" title="User Management"  description="Edit user information."/>
       <siteMapNode  url="Admin\SpecialtyPizzaManagement.aspx" title="Specialty Pizza Management"  description="Edit specialty pizza information."/>
-      <siteMapNode  url="Admin\ToppingManagement.aspx" title="Topping Management"  description="Edit topping information."/>
     </siteMapNode>
   </siteMapNode>
 </siteMap>

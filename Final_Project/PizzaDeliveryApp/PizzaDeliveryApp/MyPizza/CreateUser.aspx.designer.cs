@@ -40,6 +40,15 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.Label lblErrorMessage;
         
         /// <summary>
+        /// NameFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameFieldValidator;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,13 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox nameBox;
         
         /// <summary>
-        /// NameFieldValidator control.
+        /// UserIDFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserIDFieldValidator;
         
         /// <summary>
         /// Label3 control.
@@ -85,13 +94,22 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox userIdBox;
         
         /// <summary>
-        /// UserIDFieldValidator control.
+        /// EmailFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserIDFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailFieldValidator;
+        
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// Label4 control.
@@ -112,22 +130,13 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox emailBox;
         
         /// <summary>
-        /// EmailFieldValidator control.
+        /// PasswordFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailFieldValidator;
-        
-        /// <summary>
-        /// RegularExpressionValidator1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordFieldValidator;
         
         /// <summary>
         /// Label5 control.
@@ -148,13 +157,22 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox passwordBox;
         
         /// <summary>
-        /// PasswordFieldValidator control.
+        /// ConfirmPassFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ConfirmPassFieldValidator;
+        
+        /// <summary>
+        /// CompareValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
         
         /// <summary>
         /// Label6 control.
@@ -175,22 +193,13 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox confirmPasswordBox;
         
         /// <summary>
-        /// ConfirmPassFieldValidator control.
+        /// RequiredFieldValidatorPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ConfirmPassFieldValidator;
-        
-        /// <summary>
-        /// CompareValidator1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPhone;
         
         /// <summary>
         /// lblPhone control.
@@ -211,13 +220,13 @@ namespace PizzaDeliveryApp.MyPizza {
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
-        /// RequiredFieldValidatorPhone control.
+        /// RequiredFieldValidatorAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPhone;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAddress;
         
         /// <summary>
         /// lblAddress control.
@@ -236,15 +245,6 @@ namespace PizzaDeliveryApp.MyPizza {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAddress;
-        
-        /// <summary>
-        /// RequiredFieldValidatorAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAddress;
         
         /// <summary>
         /// btnSubmit control.

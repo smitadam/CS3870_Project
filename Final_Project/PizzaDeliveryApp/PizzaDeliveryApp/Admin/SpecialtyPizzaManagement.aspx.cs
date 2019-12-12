@@ -17,7 +17,7 @@ namespace PizzaDeliveryApp.Admin
             }
             else
             {
-                lblLoginName.Text = Application["CurrentUser"].ToString();
+                lblLoginName.Text = "Logged in as: " + Application["CurrentUser"].ToString();
                 btnLoginStatus.Text = "Logout";
             }
         }
@@ -26,6 +26,40 @@ namespace PizzaDeliveryApp.Admin
         {
             Response.Redirect(@"/MyPizza\Login.aspx");
             Application["CurrentUser"] = "";
+        }
+
+        protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        {
+            try
+            {
+                txtMessage.Text = "Specialty pizza was added to the database.";
+            }
+            catch (Exception Ex)
+            {
+                txtMessage.Text = Ex.Message.ToString();
+            }
+        }
+        protected void DetailsView1_ItemDeleting(object sender, DetailsViewDeleteEventArgs e)
+        {
+            try
+            {
+                txtMessage.Text = "Specialty pizza was deleted from the database.";
+            }
+            catch (Exception Ex)
+            {
+                txtMessage.Text = Ex.Message.ToString();
+            }
+        }
+        protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
+        {
+            try
+            {
+                txtMessage.Text = "Specialty pizza information was updated.";
+            }
+            catch (Exception Ex)
+            {
+                txtMessage.Text = Ex.Message.ToString();
+            }
         }
     }
 }

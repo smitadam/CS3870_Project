@@ -13,13 +13,13 @@ namespace PizzaDeliveryApp.User {
     public partial class Create_Order {
         
         /// <summary>
-        /// DefaultForm control.
+        /// CreateOrderForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm DefaultForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm CreateOrderForm;
         
         /// <summary>
         /// lblLoginName control.
