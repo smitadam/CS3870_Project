@@ -27,5 +27,10 @@ namespace PizzaDeliveryApp
             Response.Redirect(@"/MyPizza\Login.aspx");
             Application["CurrentUser"] = "";
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CheckoutPage.aspx");
+        }
     }
 }

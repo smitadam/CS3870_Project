@@ -39,6 +39,7 @@
                     <asp:TreeNode NavigateUrl="Member\Checkout.aspx" Text="Checkout" Value="New Node"></asp:TreeNode>
                 </Nodes>
             </asp:TreeView>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Create Order" Width="121px" />
     </form>
 </body>
 </html>
