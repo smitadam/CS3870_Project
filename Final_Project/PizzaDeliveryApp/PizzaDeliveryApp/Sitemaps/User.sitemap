@@ -5,6 +5,7 @@
       <siteMapNode url="MyPizza\Login.aspx" title="Login"  description="Login to your user account." />
       <siteMapNode url="MyPizza\CreateUser.aspx" title="Register"  description="Register for a MyPizza account." />
     </siteMapNode>
-    <siteMapNode url="Default.aspx" title="Home"  description="Main page" />
+    <siteMapNode url="User\Default.aspx" title="Home"  description="Main page" />
+    <siteMapNode url="User\CreateOrder.aspx" title="Order Online"  description="Create an order for delivery or carry out." />
   </siteMapNode>
 </siteMap>
